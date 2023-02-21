@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * print_alphabet-  prints the alphabet
@@ -7,7 +6,7 @@
  */
 void print_alphabet(void)
 {
-	char chd;
+	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
