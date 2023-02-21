@@ -1,14 +1,13 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- * print the English Alphabet
+ * print_alphabet-  prints the alphabet
  *
- * Return: Success 0
+ * Return: Always 0 (Success)
  */
-
 void print_alphabet(void)
 {
-	char c;
+	char chd;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
@@ -16,4 +15,3 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-
