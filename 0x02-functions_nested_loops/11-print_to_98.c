@@ -1,47 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_times_table - prints the times table for n.
- * @n: The multiplication table requested.
- * Return: Nothing.
+ * print_to_98 - print all natural numbers from n to 98.
+ * @n: the number to start counting from to 98
+ * Return: void returns nothing.
  */
-void print_times_table(int n)
+void print_to_98(int n)
 {
-	int i, j, res;
-
-	if (!(n > 15 || n < 0))
+	if (n < 98)
 	{
-		for (i = 0; i <= n; i++)
-		{
-			for (j = 0; j <= n; j++)
-			{
-				res = (i * j);
-				if (j != 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				if (res < 10 && j != 0)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((res % 10) + '0');
-				}
-				else if (res >= 10 && res < 100)
-				{
-					_putchar(' ');
-					_putchar((res / 10) + '0');
-					_putchar((res % 10) + '0');
-				}
-				else if (res >= 100 && j != 0)
-				{
-					_putchar((res / 100) + '0');
-					_putchar((res / 10) % 10 + '0');
-					_putchar((res % 10) + '0');
-				}
-				else
-					_putchar((res % 10) + '0');
-			}
-			_putchar('\n');
-		}
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+		printf("%d\n", 98);
+	}
+	else
+	{
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+		printf("%d\n", 98);
 	}
 }
