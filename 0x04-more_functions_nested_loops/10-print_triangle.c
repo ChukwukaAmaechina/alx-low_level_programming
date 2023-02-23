@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
- * print_triangle - Function to print triangele
- * @size: size of triangle
- */
+  * print_triangle - Prints a triangle of squares according parameter
+  * @size: The size of the squares triangle
+  *
+  * Return: empty
+  */
 void print_triangle(int size)
 {
-	int x, y;
+	int x, y, z;
 
 	if (size <= 0)
 	{
-		_putchar('\n')
+		_putchar('\n');
 	}
 	else
 	{
