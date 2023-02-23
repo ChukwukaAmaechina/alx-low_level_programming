@@ -1,3 +1,7 @@
 #include "main.h"
 
-int postitive_or_negative(10);
+int main(void)
+{
+	positive_or_negative();
+	return (0);
+}
