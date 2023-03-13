@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - function to print the multiplaction of two numbers
  * @argc: argument counter
